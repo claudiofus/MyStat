@@ -1,0 +1,29 @@
+<?page title="Auto Generated index.zul"?>
+
+<?script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"?>
+<?script type="text/javascript" src="http://code.highcharts.com/highcharts.js"?>
+<?script type="text/javascript" src="http://code.highcharts.com/modules/data.js"?>
+<?script type="text/javascript" src="http://code.highcharts.com/modules/exporting.js"?>
+<?script type="text/javascript" src="http://code.highcharts.com/modules/offline-exporting.js"?>
+<?script type="text/javascript" src="resources/js/functions.js"?>
+<?style  type="text/css" href="resources/css/style.css"?>
+
+<zk>
+<window id="mainWindow" title="My Stats" class="window" apply="controller.PdfExtractor">
+
+	<div>
+		<label>Select the payroll files:</label>
+		<button id="btn" label="Upload" upload="true, multiple=true, accept=application/pdf, native"/>
+	</div>
+	
+	<html>
+		<body>
+			<div id="salaryContainer" class="firstContainer"></div>
+			<div>
+			    <div id="holidaysContainer" class="otherContainers"></div>
+			    <div id="leavesContainer" class="otherContainers"></div>
+			</div>
+		</body>
+	</html>
+</window>
+</zk>
