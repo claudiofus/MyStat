@@ -18,6 +18,7 @@
 	
 	<html>
 		<body>
+			<label>TEST</label>
 			<div id="salaryContainer" class="firstContainer"></div>
 			<div>
 			    <div id="holidaysContainer" class="otherContainers"></div>
